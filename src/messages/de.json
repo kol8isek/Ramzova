@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Bergunterkunft Ramzová — Luxuriöser Aufenthalt im Altvatergebirge",
+    "description": "Elegante Bergunterkunft im Herzen des Altvatergebirges mit Panoramablick auf den Praděd."
+  },
+  "nav": {
+    "stay": "Aufenthalt",
+    "rooms": "Zimmer",
+    "dining": "Gastronomie",
+    "contact": "Kontakt",
+    "book": "Reservieren",
+    "languageLabel": "Sprache"
+  },
+  "hero": {
+    "kicker": "Altvatergebirge · 760 m ü. M.",
+    "title": "Berge, die Luxus atmen.",
+    "subtitle": "Eine Zuflucht über den Wolken, wo alpine Eleganz auf böhmisches Bergerbe trifft.",
+    "cta": "Unterkunft entdecken",
+    "scroll": "Nach unten scrollen"
+  },
+  "intro": {
+    "kicker": "Willkommen in Ramzová",
+    "title": "Ein Ort, an dem die Zeit langsamer wird.",
+    "body": "Seit über einem Jahrhundert empfangen wir Reisende, die die Stille der Berge, den Duft von Kiefern und einen Komfort höchster Standards suchen. Unsere Unterkunft liegt am Hang des Šerák mit Panoramablick auf die Kämme des Altvatergebirges — vom Sonnenaufgang über dem Praděd bis zu sternenklaren Nächten über dem Tal.",
+    "imageAlt": "Bergunterkunft",
+    "stats": {
+      "tradition": "Tradition",
+      "rooms": "Zimmer",
+      "elevation": "ü. M."
+    }
+  },
+  "rooms": {
+    "kicker": "Zimmer & Suiten",
+    "title": "Komfort mit Aussicht.",
+    "body": "Jedes unserer 48 Zimmer und Suiten bietet handverlesene Möbel, regionales Holz, Kaschmir-Textilien und einen privaten Balkon mit Blick auf die Berge.",
+    "cta": "Zimmer entdecken",
+    "items": [
+      { "name": "Classic Zimmer", "size": "32 m²", "desc": "Gemütliches Zimmer mit Blick auf den Wald und Steinbadezimmer." },
+      { "name": "Panorama Suite", "size": "58 m²", "desc": "Suite mit offenem Kamin und Terrasse mit Blick auf den Praděd." },
+      { "name": "Ramzová Residenz", "size": "120 m²", "desc": "Zweistöckige Residenz für Familien — Privatsauna, Bibliothek und Koch auf Wunsch." }
+    ]
+  },
+  "dining": {
+    "kicker": "Gastronomie in der Umgebung",
+    "title": "Empfohlene Restaurants in der Nähe.",
+    "body": "Unsere Unterkunft verfügt über kein eigenes Restaurant und serviert kein Frühstück — wir sind überzeugt, dass die besten Mahlzeiten in den umliegenden Gasthäusern und Berghütten zu finden sind, die wir sorgfältig ausgewählt haben. Gerne reservieren wir für Sie einen Tisch.",
+    "note": "Hinweis: Frühstück und Halbpension sind nicht im Zimmerpreis enthalten.",
+    "items": [
+      { "name": "Berghütte Šerák", "type": "Traditionelle böhmische Küche", "distance": "1,2 km" },
+      { "name": "Bergrestaurant Paprsek", "type": "Saisonales Menü · vegan-freundlich", "distance": "3,5 km" },
+      { "name": "Pension U Sloníka", "type": "Bäuerliche Spezialitäten · Hausbier", "distance": "850 m" },
+      { "name": "Café Na Skále", "type": "Frühstück · Kaffee · Gebäck", "distance": "650 m" }
+    ]
+  },
+  "video": {
+    "kicker": "Blick von oben",
+    "title": "Unsere Berge aus der Drohnenperspektive.",
+    "body": "Ein Kurzfilm aufgenommen über dem Šerák bei Sonnenaufgang."
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Wir freuen uns auf Sie.",
+    "address": "Bergunterkunft Ramzová, Ramzová 142, 788 25 Ostružná, Tschechien",
+    "phone": "+420 583 000 000",
+    "email": "reservierung@ubytovani-ramzova.cz",
+    "hours": "Rezeption rund um die Uhr geöffnet",
+    "cta": "Aufenthalt buchen",
+    "labels": {
+      "address": "Adresse",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "reception": "Rezeption"
+    }
+  },
+  "footer": {
+    "brandName": "Bergunterkunft Ramzová",
+    "tagline": "Bergunterkunft · Altvatergebirge · seit 1923",
+    "rights": "Alle Rechte vorbehalten.",
+    "links": {
+      "privacy": "Datenschutz",
+      "terms": "AGB",
+      "press": "Presse"
+    },
+    "contactHeading": "Kontakt",
+    "infoHeading": "Info",
+    "madeWith": "Mit Sorgfalt gemacht · im Altvatergebirge"
+  }
+}

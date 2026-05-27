@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Pensjonat Górski Ramzová — Luksusowy wypoczynek w Jesionikach",
+    "description": "Elegancki pensjonat górski w sercu Jesioników z panoramicznym widokiem na Pradziada."
+  },
+  "nav": {
+    "stay": "Pobyt",
+    "rooms": "Pokoje",
+    "dining": "Gastronomia",
+    "contact": "Kontakt",
+    "book": "Rezerwuj",
+    "languageLabel": "Język"
+  },
+  "hero": {
+    "kicker": "Jesioniki · 760 m n.p.m.",
+    "title": "Góry, które oddychają luksusem.",
+    "subtitle": "Schronienie ponad chmurami, gdzie alpejska elegancja spotyka się z czeskim dziedzictwem górskim.",
+    "cta": "Odkryj pensjonat",
+    "scroll": "Przewiń w dół"
+  },
+  "intro": {
+    "kicker": "Witamy w Ramzovej",
+    "title": "Miejsce, w którym czas zwalnia.",
+    "body": "Od ponad stulecia gościmy podróżników szukających ciszy gór, zapachu sosen i komfortu odpowiadającego najwyższym standardom. Nasz pensjonat stoi na zboczu Šeráka z panoramicznym widokiem na grzbiety Jesioników — od wschodu słońca nad Pradziadem po gwiezdne noce nad doliną.",
+    "imageAlt": "Pensjonat górski",
+    "stats": {
+      "tradition": "Tradycja",
+      "rooms": "Pokoi",
+      "elevation": "n.p.m."
+    }
+  },
+  "rooms": {
+    "kicker": "Pokoje i apartamenty",
+    "title": "Komfort z widokiem.",
+    "body": "Każdy z naszych 48 pokoi i apartamentów oferuje ręcznie dobrane meble, lokalne drewno, kaszmirowe tekstylia i prywatny balkon z widokiem na góry.",
+    "cta": "Zobacz pokoje",
+    "items": [
+      { "name": "Pokój klasyczny", "size": "32 m²", "desc": "Przytulny pokój z widokiem na las i kamienną łazienką." },
+      { "name": "Panoramiczny Apartament", "size": "58 m²", "desc": "Apartament z otwartym kominkiem i tarasem z widokiem na Pradziada." },
+      { "name": "Rezydencja Ramzová", "size": "120 m²", "desc": "Dwupiętrowa rezydencja dla rodzin — prywatna sauna, biblioteka i szef kuchni na żądanie." }
+    ]
+  },
+  "dining": {
+    "kicker": "Gastronomia w okolicy",
+    "title": "Polecamy restauracje w okolicy.",
+    "body": "Nasz pensjonat nie posiada własnej restauracji ani nie serwuje śniadań — wierzymy, że najlepszych smaków doświadczycie w lokalnych karczmach i chatach górskich, które starannie wybieramy. Chętnie zarezerwujemy dla Państwa stolik.",
+    "note": "Uwaga: Śniadanie ani półpansjon nie są wliczone w cenę zakwaterowania.",
+    "items": [
+      { "name": "Chata Šerák", "type": "Tradycyjna kuchnia czeska", "distance": "1,2 km" },
+      { "name": "Restauracja Górska Paprsek", "type": "Menu sezonowe · opcje wegańskie", "distance": "3,5 km" },
+      { "name": "Pensjonat U Sloníka", "type": "Specjały wiejskie · piwo rzemieślnicze", "distance": "850 m" },
+      { "name": "Kawiarnia Na Skále", "type": "Śniadania · kawa · wypieki", "distance": "650 m" }
+    ]
+  },
+  "video": {
+    "kicker": "Widok z góry",
+    "title": "Nasze góry oczami drona.",
+    "body": "Krótki film nakręcony nad Šerákiem o wschodzie słońca."
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Czekamy na Państwa.",
+    "address": "Pensjonat Górski Ramzová, Ramzová 142, 788 25 Ostružná, Czechy",
+    "phone": "+420 583 000 000",
+    "email": "rezerwacja@ubytovani-ramzova.cz",
+    "hours": "Recepcja czynna całą dobę",
+    "cta": "Zarezerwuj pobyt",
+    "labels": {
+      "address": "Adres",
+      "phone": "Telefon",
+      "email": "E-mail",
+      "reception": "Recepcja"
+    }
+  },
+  "footer": {
+    "brandName": "Pensjonat Górski Ramzová",
+    "tagline": "Pensjonat górski · Jesioniki · od 1923",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "links": {
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "press": "Dla prasy"
+    },
+    "contactHeading": "Kontakt",
+    "infoHeading": "Informacje",
+    "madeWith": "Stworzone z pasją · w Jesionikach"
+  }
+}

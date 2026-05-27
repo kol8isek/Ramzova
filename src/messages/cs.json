@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Horské ubytování Ramzová — Luxusní pobyt v Jeseníkách",
+    "description": "Elegantní horské ubytování v srdci Jeseníků. Komfort a panoramatické výhledy na Praděd."
+  },
+  "nav": {
+    "stay": "Pobyt",
+    "rooms": "Pokoje",
+    "dining": "Gastronomie",
+    "contact": "Kontakt",
+    "book": "Rezervovat",
+    "languageLabel": "Jazyk"
+  },
+  "hero": {
+    "kicker": "Jeseníky · 760 m n.m.",
+    "title": "Hory, které dýchají luxusem.",
+    "subtitle": "Útočiště nad oblaky, kde se setkává alpská elegance s českým horským dědictvím.",
+    "cta": "Objevte ubytování",
+    "scroll": "Posunout dolů"
+  },
+  "intro": {
+    "kicker": "Vítejte v Ramzové",
+    "title": "Místo, kde čas zpomalí.",
+    "body": "Více než století hostíme cestovatele hledající ticho hor, vůni borovic a komfort, který odpovídá nejvyšším standardům. Naše ubytování stojí na úbočí Šeráku s panoramatickým výhledem na hřebeny Jeseníků — od východu slunce nad Pradědem po hvězdné noci nad údolím.",
+    "imageAlt": "Horské ubytování",
+    "stats": {
+      "tradition": "Tradice",
+      "rooms": "Pokojů",
+      "elevation": "n.m."
+    }
+  },
+  "rooms": {
+    "kicker": "Pokoje a apartmá",
+    "title": "Pohodlí s výhledem.",
+    "body": "Každý z našich 48 pokojů a apartmá nabízí ručně vybraný nábytek, lokální dřevo, kašmírové textilie a soukromý balkon orientovaný k horám.",
+    "cta": "Prozkoumat pokoje",
+    "items": [
+      { "name": "Klasický pokoj", "size": "32 m²", "desc": "Útulný pokoj s výhledem na les a kamennou koupelnou." },
+      { "name": "Panoramatická Suite", "size": "58 m²", "desc": "Apartmá s otevřeným krbem a terasou s výhledem na Praděd." },
+      { "name": "Ramzová Residence", "size": "120 m²", "desc": "Dvoupatrová rezidence pro rodiny — privátní sauna, knihovna a šéfkuchař na vyžádání." }
+    ]
+  },
+  "dining": {
+    "kicker": "Gastronomie v okolí",
+    "title": "Doporučujeme okolní restaurace.",
+    "body": "Naše ubytování nenabízí vlastní restauraci ani snídaně — věříme, že nejlepší zážitky najdete v místních hospůdkách a chatách, které pečlivě vybíráme. Rádi vám zarezervujeme stůl.",
+    "note": "Pozn.: Snídaně ani polopenze nejsou součástí ubytování.",
+    "items": [
+      { "name": "Chata Šerák", "type": "Tradiční česká kuchyně", "distance": "1,2 km" },
+      { "name": "Horská restaurace Paprsek", "type": "Sezónní menu · vegan friendly", "distance": "3,5 km" },
+      { "name": "Penzion U Sloníka", "type": "Selské speciality · domácí pivo", "distance": "850 m" },
+      { "name": "Kavárna Na Skále", "type": "Snídaně · káva · zákusky", "distance": "650 m" }
+    ]
+  },
+  "video": {
+    "kicker": "Pohled z výšky",
+    "title": "Naše hory očima dronu.",
+    "body": "Krátký film natočený nad Šerákem za východu slunce."
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Těšíme se na vás.",
+    "address": "Horské ubytování Ramzová, Ramzová 142, 788 25 Ostružná",
+    "phone": "+420 583 000 000",
+    "email": "rezervace@ubytovani-ramzova.cz",
+    "hours": "Recepce 24 hodin denně",
+    "cta": "Rezervovat pobyt",
+    "labels": {
+      "address": "Adresa",
+      "phone": "Telefon",
+      "email": "E-mail",
+      "reception": "Recepce"
+    }
+  },
+  "footer": {
+    "brandName": "Horské ubytování Ramzová",
+    "tagline": "Horské ubytování · Jeseníky · od 1923",
+    "rights": "Všechna práva vyhrazena.",
+    "links": {
+      "privacy": "Ochrana osobních údajů",
+      "terms": "Obchodní podmínky",
+      "press": "Pro tisk"
+    },
+    "contactHeading": "Kontakt",
+    "infoHeading": "Info",
+    "madeWith": "Vytvořeno s láskou · v Jeseníkách"
+  }
+}

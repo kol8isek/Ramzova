@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Mountain Accommodation Ramzová — Luxury retreat in the Jeseníky Mountains",
+    "description": "Elegant mountain accommodation in the heart of the Jeseníky range with panoramic views of Praděd."
+  },
+  "nav": {
+    "stay": "Stay",
+    "rooms": "Rooms",
+    "dining": "Dining",
+    "contact": "Contact",
+    "book": "Book",
+    "languageLabel": "Language"
+  },
+  "hero": {
+    "kicker": "Jeseníky · 760 m above sea level",
+    "title": "Mountains that breathe luxury.",
+    "subtitle": "A sanctuary above the clouds where Alpine elegance meets Czech mountain heritage.",
+    "cta": "Discover the accommodation",
+    "scroll": "Scroll down"
+  },
+  "intro": {
+    "kicker": "Welcome to Ramzová",
+    "title": "A place where time slows down.",
+    "body": "For more than a century we have welcomed travellers seeking the silence of the mountains, the scent of pine and a comfort that matches the highest standards. Our accommodation sits on the slope of Šerák with a panoramic view of the Jeseníky ridges — from sunrise over Praděd to star-filled nights above the valley.",
+    "imageAlt": "Mountain accommodation",
+    "stats": {
+      "tradition": "Tradition",
+      "rooms": "Rooms",
+      "elevation": "a.s.l."
+    }
+  },
+  "rooms": {
+    "kicker": "Rooms & Suites",
+    "title": "Comfort with a view.",
+    "body": "Each of our 48 rooms and suites features hand-selected furniture, local timber, cashmere textiles and a private balcony facing the mountains.",
+    "cta": "Explore rooms",
+    "items": [
+      { "name": "Classic Room", "size": "32 m²", "desc": "A cosy room overlooking the forest with a stone bathroom." },
+      { "name": "Panorama Suite", "size": "58 m²", "desc": "Suite with an open fireplace and terrace facing Praděd." },
+      { "name": "Ramzová Residence", "size": "120 m²", "desc": "Two-storey residence for families — private sauna, library and a chef on request." }
+    ]
+  },
+  "dining": {
+    "kicker": "Dining nearby",
+    "title": "Hand-picked restaurants in the area.",
+    "body": "Our accommodation does not have its own restaurant and does not serve breakfast — we believe the finest meals are found in the local inns and mountain lodges we have personally curated. We are happy to make a reservation for you.",
+    "note": "Note: Breakfast and half-board are not included in the room rate.",
+    "items": [
+      { "name": "Chata Šerák", "type": "Traditional Czech cuisine", "distance": "1.2 km" },
+      { "name": "Mountain Restaurant Paprsek", "type": "Seasonal menu · vegan friendly", "distance": "3.5 km" },
+      { "name": "Penzion U Sloníka", "type": "Rustic specialties · craft beer", "distance": "850 m" },
+      { "name": "Café Na Skále", "type": "Breakfast · coffee · pastries", "distance": "650 m" }
+    ]
+  },
+  "video": {
+    "kicker": "A view from above",
+    "title": "Our mountains, seen by drone.",
+    "body": "A short film shot above Šerák at sunrise."
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "We look forward to welcoming you.",
+    "address": "Mountain Accommodation Ramzová, Ramzová 142, 788 25 Ostružná, Czech Republic",
+    "phone": "+420 583 000 000",
+    "email": "reservations@ubytovani-ramzova.cz",
+    "hours": "Reception open 24 hours",
+    "cta": "Book your stay",
+    "labels": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "reception": "Reception"
+    }
+  },
+  "footer": {
+    "brandName": "Mountain Accommodation Ramzová",
+    "tagline": "Mountain accommodation · Jeseníky · since 1923",
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "press": "Press"
+    },
+    "contactHeading": "Contact",
+    "infoHeading": "Info",
+    "madeWith": "Made with care · in Jeseníky"
+  }
+}
