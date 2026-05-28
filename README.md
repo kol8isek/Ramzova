@@ -27,11 +27,11 @@ Projekt je předpřipravený pro Cloudflare Pages přes `@cloudflare/next-on-pag
    - **Framework preset:** `Next.js`
    - **Build command:** `npx @cloudflare/next-on-pages@1`
    - **Build output directory:** `.vercel/output/static`
-   - **Node version:** `20` nebo vyšší (Environment variables → `NODE_VERSION = 20`)
-4. V **Settings → Functions** zapni:
+4. Environment variables → přidat `NODE_VERSION = 20`
+5. Po prvním (potenciálně neúspěšném) buildu jdi do **Settings → Functions** a nastav:
    - **Compatibility flag:** `nodejs_compat`
    - **Compatibility date:** `2024-09-23` (nebo novější)
-5. Klikni **Save and Deploy**. Každý push do `main` spustí nový deploy.
+6. Retry deployment. Každý push do `main` pak spustí nový deploy.
 
 ### Možnost B — přes Wrangler CLI z lokálu (Linux/macOS/WSL)
 
