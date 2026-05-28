@@ -28,8 +28,18 @@ export function BookingCalendar({ roomId, range, onChange }: Props) {
   const t = useTranslations('booking.calendar');
   const today = useMemo(() => startOfDay(new Date()), []);
   const [cursor, setCursor] = useState(() => startOfMonth(new Date()));
+  const [hoverDate, setHoverDate] = useState<Date | null>(null);
 
   const blocked = useMemo(() => getBlockedNights(roomId), [roomId]);
+
+  // Show preview range only when arrival is set but departure isn't yet,
+  // and the hovered day is a valid future day in the same continuous block.
+  const previewEnd = useMemo(() => {
+    if (!range.arrival || range.departure || !hoverDate) return null;
+    if (hoverDate <= range.arrival) return null;
+    if (rangeOverlapsBlocked(range.arrival, hoverDate, blocked)) return null;
+    return hoverDate;
+  }, [range, hoverDate, blocked]);
 
   const weekdayLabels = useMemo(() => {
     const monday = new Date(2024, 0, 1); // Mon Jan 1 2024
@@ -81,8 +91,12 @@ export function BookingCalendar({ roomId, range, onChange }: Props) {
             const isBlocked = blocked.has(isoDate(d));
             const isArrival = range.arrival && isoDate(d) === isoDate(range.arrival);
             const isDeparture = range.departure && isoDate(d) === isoDate(range.departure);
-            const inRange =
+            const inConfirmedRange =
               range.arrival && range.departure && d > range.arrival && d < range.departure;
+            const inPreviewRange =
+              previewEnd && range.arrival && d > range.arrival && d < previewEnd;
+            const isPreviewEnd =
+              previewEnd && isoDate(d) === isoDate(previewEnd);
             const disabled = past || isBlocked || !inMonth;
 
             const base =
@@ -92,7 +106,9 @@ export function BookingCalendar({ roomId, range, onChange }: Props) {
             else if (past) cls += ' text-cream/25 line-through';
             else if (isBlocked) cls += ' text-cream/30 line-through bg-stone-900/40';
             else if (isArrival || isDeparture) cls += ' bg-gold text-stone-950 font-medium';
-            else if (inRange) cls += ' bg-gold/30 text-cream';
+            else if (isPreviewEnd) cls += ' bg-gold/60 text-stone-950 cursor-pointer';
+            else if (inConfirmedRange) cls += ' bg-gold/30 text-cream';
+            else if (inPreviewRange) cls += ' bg-gold/20 text-cream cursor-pointer';
             else cls += ' text-cream hover:bg-stone-800 cursor-pointer';
 
             return (
@@ -101,6 +117,8 @@ export function BookingCalendar({ roomId, range, onChange }: Props) {
                 type="button"
                 disabled={disabled}
                 onClick={() => handleDayClick(d)}
+                onMouseEnter={() => !disabled && setHoverDate(d)}
+                onMouseLeave={() => setHoverDate(null)}
                 className={cls}
                 aria-label={d.toLocaleDateString(locale)}
               >
