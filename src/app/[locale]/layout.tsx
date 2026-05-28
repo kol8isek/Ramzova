@@ -8,8 +8,6 @@ import { Footer } from '@/components/Footer';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import '../globals.css';
 
-export const runtime = 'edge';
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }

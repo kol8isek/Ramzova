@@ -17,32 +17,29 @@ Web poběží na `http://localhost:3000`:
 
 ## Nasazení na Cloudflare Pages
 
-Projekt je předpřipravený pro Cloudflare Pages přes `@cloudflare/next-on-pages`.
+Projekt je nakonfigurovaný jako **statický export** (`output: 'export'`) — generuje čisté HTML soubory bez nutnosti edge funkcí.
 
-### Možnost A — přes Cloudflare dashboard (doporučeno)
-
-1. Přihlaš se na <https://dash.cloudflare.com> → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
-2. Vyber repo `kol8isek/Ramzova` a klikni **Begin setup**.
+1. Přihlaš se na <https://dash.cloudflare.com> → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**
+2. Vyber repo `kol8isek/Ramzova`
 3. Nastav build konfiguraci:
-   - **Framework preset:** `Next.js`
-   - **Build command:** `npx @cloudflare/next-on-pages@1`
-   - **Build output directory:** `.vercel/output/static`
-4. Environment variables → přidat `NODE_VERSION = 20`
-5. Po prvním (potenciálně neúspěšném) buildu jdi do **Settings → Functions** a nastav:
-   - **Compatibility flag:** `nodejs_compat`
-   - **Compatibility date:** `2024-09-23` (nebo novější)
-6. Retry deployment. Každý push do `main` pak spustí nový deploy.
+   - **Framework preset:** `Next.js (Static HTML Export)` (nebo `None`)
+   - **Build command:** `npm run build`
+   - **Build output directory:** `out`
+4. Environment variables → přidej `NODE_VERSION = 20`
+5. **Save and Deploy**
 
-### Možnost B — přes Wrangler CLI z lokálu (Linux/macOS/WSL)
+Po dokončení deployi bude web dostupný na `https://ramzova.pages.dev`:
+- `/` → automatický redirect na `/cs/` (definováno v `public/_redirects`)
+- `/cs/`, `/en/`, `/pl/`, `/de/` → jednotlivé jazykové verze
+
+Každý push do `main` spustí nový deploy.
+
+### Lokální produkční náhled
 
 ```bash
-npm install
-npm run pages:build              # vyžaduje Linux/macOS/WSL (ne čisté Windows)
-npx wrangler login
-npx wrangler pages deploy .vercel/output/static --project-name=ramzova
+npm run build         # vygeneruje out/
+npx serve out         # spustí statický server na http://localhost:3000
 ```
-
-> **Poznámka pro Windows:** lokální `pages:build` na čistém Windows neprojde kvůli omezení Vercel CLI. Buď použij **WSL**, nebo nech build běžet přímo na Cloudflare (Možnost A).
 
 ## Struktura
 
