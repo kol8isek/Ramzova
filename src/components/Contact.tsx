@@ -13,7 +13,7 @@ export function Contact() {
             <p className="kicker">{t('kicker')}</p>
           </div>
           <h2 className="heading-section text-cream mb-10">{t('title')}</h2>
-          <a href={`mailto:${t('email')}`} className="btn-primary">
+          <a href="#booking" className="btn-primary">
             {t('cta')}
             <ArrowUpRight size={14} />
           </a>

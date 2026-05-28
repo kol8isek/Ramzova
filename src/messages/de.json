@@ -6,6 +6,7 @@
   "nav": {
     "stay": "Aufenthalt",
     "rooms": "Zimmer",
+    "booking": "Reservierung",
     "dining": "Gastronomie",
     "contact": "Kontakt",
     "book": "Reservieren",
@@ -63,13 +64,51 @@
     "address": "Bergunterkunft Ramzová, Ramzová 142, 788 25 Ostružná, Tschechien",
     "phone": "+420 583 000 000",
     "email": "reservierung@ubytovani-ramzova.cz",
-    "hours": "Rezeption rund um die Uhr geöffnet",
+    "hours": "Check-in nach Absprache",
     "cta": "Aufenthalt buchen",
     "labels": {
       "address": "Adresse",
       "phone": "Telefon",
       "email": "E-Mail",
-      "reception": "Rezeption"
+      "reception": "Check-in"
+    }
+  },
+  "booking": {
+    "kicker": "Reservierung",
+    "title": "Reservieren Sie Ihren Aufenthalt.",
+    "body": "Wählen Sie ein Zimmer und einen Termin im Kalender unten. Wir bestätigen per E-Mail innerhalb von 24 Stunden. Keine Anzahlung, keine automatische Buchung — jeder Aufenthalt wird persönlich bestätigt.",
+    "chooseRoom": "Zimmer wählen",
+    "yourDetails": "Ihre Angaben",
+    "submit": "Anfrage senden",
+    "submitNote": "Ihr E-Mail-Programm öffnet sich mit einer vorbereiteten Nachricht.",
+    "fields": {
+      "name": "Vor- und Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon (optional)",
+      "guests": "Anzahl Gäste",
+      "note": "Anmerkung (Haustiere, Allergien, spezielle Wünsche...)"
+    },
+    "summary": {
+      "arrival": "Anreise",
+      "departure": "Abreise",
+      "nights": "Nächte"
+    },
+    "calendar": {
+      "selectDates": "Termin wählen",
+      "prev": "Vorheriger Monat",
+      "next": "Nächster Monat",
+      "legendSelected": "Ausgewählt",
+      "legendRange": "Im Zeitraum",
+      "legendBlocked": "Belegt"
+    },
+    "rooms": [
+      { "id": "classic", "name": "Classic Zimmer", "capacity": "2 Gäste · 32 m²" },
+      { "id": "panorama", "name": "Panorama Suite", "capacity": "2–3 Gäste · 58 m²" },
+      { "id": "residence", "name": "Ramzová Residenz", "capacity": "4–6 Gäste · 120 m²" }
+    ],
+    "email": {
+      "subject": "Buchungsanfrage — {room}",
+      "body": "Guten Tag,\n\nich möchte einen Aufenthalt mit folgenden Angaben buchen:\n\nZimmer: {room}\nAnreise: {arrival}\nAbreise: {departure}\nNächte: {nights}\nGäste: {guests}\n\nName: {name}\nE-Mail: {email}\nTelefon: {phone}\n\nAnmerkung: {note}\n\nVielen Dank, {name}"
     }
   },
   "footer": {

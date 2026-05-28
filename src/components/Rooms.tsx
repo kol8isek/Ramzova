@@ -53,7 +53,7 @@ export function Rooms() {
         </div>
 
         <div className="mt-14 reveal">
-          <a href="#contact" className="btn-outline">
+          <a href="#booking" className="btn-outline">
             {t('cta')}
             <ArrowUpRight size={14} />
           </a>

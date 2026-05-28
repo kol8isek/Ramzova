@@ -6,6 +6,7 @@
   "nav": {
     "stay": "Pobyt",
     "rooms": "Pokoje",
+    "booking": "Rezervace",
     "dining": "Gastronomie",
     "contact": "Kontakt",
     "book": "Rezervovat",
@@ -63,13 +64,51 @@
     "address": "Horské ubytování Ramzová, Ramzová 142, 788 25 Ostružná",
     "phone": "+420 583 000 000",
     "email": "rezervace@ubytovani-ramzova.cz",
-    "hours": "Recepce 24 hodin denně",
+    "hours": "Check-in dle dohody",
     "cta": "Rezervovat pobyt",
     "labels": {
       "address": "Adresa",
       "phone": "Telefon",
       "email": "E-mail",
-      "reception": "Recepce"
+      "reception": "Check-in"
+    }
+  },
+  "booking": {
+    "kicker": "Rezervace",
+    "title": "Zarezervujte si pobyt.",
+    "body": "Vyberte si pokoj a termín v kalendáři. Pošleme vám potvrzení emailem do 24 hodin. Bez záloh, bez automatické rezervace — pobyt potvrzujeme osobně.",
+    "chooseRoom": "Vyberte pokoj",
+    "yourDetails": "Vaše údaje",
+    "submit": "Odeslat poptávku",
+    "submitNote": "Otevře se vám emailový klient s předvyplněnou zprávou.",
+    "fields": {
+      "name": "Jméno a příjmení",
+      "email": "E-mail",
+      "phone": "Telefon (nepovinné)",
+      "guests": "Počet hostů",
+      "note": "Poznámka (zvířata, alergie, speciální požadavky...)"
+    },
+    "summary": {
+      "arrival": "Příjezd",
+      "departure": "Odjezd",
+      "nights": "Nocí"
+    },
+    "calendar": {
+      "selectDates": "Vyberte termín",
+      "prev": "Předchozí měsíc",
+      "next": "Další měsíc",
+      "legendSelected": "Vybráno",
+      "legendRange": "V rozsahu",
+      "legendBlocked": "Obsazeno"
+    },
+    "rooms": [
+      { "id": "classic", "name": "Klasický pokoj", "capacity": "2 osoby · 32 m²" },
+      { "id": "panorama", "name": "Panoramatická Suite", "capacity": "2–3 osoby · 58 m²" },
+      { "id": "residence", "name": "Ramzová Residence", "capacity": "4–6 osob · 120 m²" }
+    ],
+    "email": {
+      "subject": "Poptávka pobytu — {room}",
+      "body": "Dobrý den,\n\nrád bych si zarezervoval pobyt s následujícími údaji:\n\nPokoj: {room}\nPříjezd: {arrival}\nOdjezd: {departure}\nPočet nocí: {nights}\nPočet hostů: {guests}\n\nJméno: {name}\nE-mail: {email}\nTelefon: {phone}\n\nPoznámka: {note}\n\nDěkuji, {name}"
     }
   },
   "footer": {

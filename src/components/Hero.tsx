@@ -44,7 +44,7 @@ export function Hero() {
             {t('subtitle')}
           </p>
           <div className="animate-fade-up" style={{ animationDelay: '0.8s', opacity: 0 }}>
-            <a href="#stay" className="btn-primary">
+            <a href="#booking" className="btn-primary">
               {t('cta')}
               <ChevronDown size={14} />
             </a>

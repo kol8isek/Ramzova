@@ -6,6 +6,7 @@
   "nav": {
     "stay": "Stay",
     "rooms": "Rooms",
+    "booking": "Booking",
     "dining": "Dining",
     "contact": "Contact",
     "book": "Book",
@@ -63,13 +64,51 @@
     "address": "Mountain Accommodation Ramzová, Ramzová 142, 788 25 Ostružná, Czech Republic",
     "phone": "+420 583 000 000",
     "email": "reservations@ubytovani-ramzova.cz",
-    "hours": "Reception open 24 hours",
+    "hours": "Check-in by arrangement",
     "cta": "Book your stay",
     "labels": {
       "address": "Address",
       "phone": "Phone",
       "email": "Email",
-      "reception": "Reception"
+      "reception": "Check-in"
+    }
+  },
+  "booking": {
+    "kicker": "Booking",
+    "title": "Reserve your stay.",
+    "body": "Choose a room and dates in the calendar below. We confirm by email within 24 hours. No deposit, no automatic confirmation — every stay is confirmed personally.",
+    "chooseRoom": "Choose a room",
+    "yourDetails": "Your details",
+    "submit": "Send inquiry",
+    "submitNote": "Your email client will open with a pre-filled message.",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "guests": "Number of guests",
+      "note": "Note (pets, allergies, special requests...)"
+    },
+    "summary": {
+      "arrival": "Arrival",
+      "departure": "Departure",
+      "nights": "Nights"
+    },
+    "calendar": {
+      "selectDates": "Select dates",
+      "prev": "Previous month",
+      "next": "Next month",
+      "legendSelected": "Selected",
+      "legendRange": "In range",
+      "legendBlocked": "Booked"
+    },
+    "rooms": [
+      { "id": "classic", "name": "Classic Room", "capacity": "2 guests · 32 m²" },
+      { "id": "panorama", "name": "Panorama Suite", "capacity": "2–3 guests · 58 m²" },
+      { "id": "residence", "name": "Ramzová Residence", "capacity": "4–6 guests · 120 m²" }
+    ],
+    "email": {
+      "subject": "Booking inquiry — {room}",
+      "body": "Hello,\n\nI would like to book a stay with the following details:\n\nRoom: {room}\nArrival: {arrival}\nDeparture: {departure}\nNights: {nights}\nGuests: {guests}\n\nName: {name}\nEmail: {email}\nPhone: {phone}\n\nNote: {note}\n\nThank you, {name}"
     }
   },
   "footer": {

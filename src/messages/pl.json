@@ -6,6 +6,7 @@
   "nav": {
     "stay": "Pobyt",
     "rooms": "Pokoje",
+    "booking": "Rezerwacja",
     "dining": "Gastronomia",
     "contact": "Kontakt",
     "book": "Rezerwuj",
@@ -63,13 +64,51 @@
     "address": "Pensjonat Górski Ramzová, Ramzová 142, 788 25 Ostružná, Czechy",
     "phone": "+420 583 000 000",
     "email": "rezerwacja@ubytovani-ramzova.cz",
-    "hours": "Recepcja czynna całą dobę",
+    "hours": "Zameldowanie po wcześniejszym uzgodnieniu",
     "cta": "Zarezerwuj pobyt",
     "labels": {
       "address": "Adres",
       "phone": "Telefon",
       "email": "E-mail",
-      "reception": "Recepcja"
+      "reception": "Zameldowanie"
+    }
+  },
+  "booking": {
+    "kicker": "Rezerwacja",
+    "title": "Zarezerwuj pobyt.",
+    "body": "Wybierz pokój i termin w kalendarzu poniżej. Potwierdzenie wyślemy mailem w ciągu 24 godzin. Bez zaliczki, bez automatycznej rezerwacji — każdy pobyt potwierdzamy osobiście.",
+    "chooseRoom": "Wybierz pokój",
+    "yourDetails": "Twoje dane",
+    "submit": "Wyślij zapytanie",
+    "submitNote": "Otworzy się Twój klient pocztowy z gotową wiadomością.",
+    "fields": {
+      "name": "Imię i nazwisko",
+      "email": "E-mail",
+      "phone": "Telefon (opcjonalnie)",
+      "guests": "Liczba gości",
+      "note": "Uwagi (zwierzęta, alergie, specjalne życzenia...)"
+    },
+    "summary": {
+      "arrival": "Przyjazd",
+      "departure": "Wyjazd",
+      "nights": "Noce"
+    },
+    "calendar": {
+      "selectDates": "Wybierz termin",
+      "prev": "Poprzedni miesiąc",
+      "next": "Następny miesiąc",
+      "legendSelected": "Wybrane",
+      "legendRange": "W zakresie",
+      "legendBlocked": "Zajęte"
+    },
+    "rooms": [
+      { "id": "classic", "name": "Pokój klasyczny", "capacity": "2 osoby · 32 m²" },
+      { "id": "panorama", "name": "Panoramiczny Apartament", "capacity": "2–3 osoby · 58 m²" },
+      { "id": "residence", "name": "Rezydencja Ramzová", "capacity": "4–6 osób · 120 m²" }
+    ],
+    "email": {
+      "subject": "Zapytanie o rezerwację — {room}",
+      "body": "Dzień dobry,\n\nchciałbym zarezerwować pobyt z następującymi danymi:\n\nPokój: {room}\nPrzyjazd: {arrival}\nWyjazd: {departure}\nLiczba nocy: {nights}\nLiczba gości: {guests}\n\nImię: {name}\nE-mail: {email}\nTelefon: {phone}\n\nUwagi: {note}\n\nDziękuję, {name}"
     }
   },
   "footer": {

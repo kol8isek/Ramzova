@@ -6,7 +6,7 @@ import { Link } from '@/i18n/routing';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
-const navItems = ['stay', 'rooms', 'dining', 'contact'] as const;
+const navItems = ['stay', 'rooms', 'booking', 'dining', 'contact'] as const;
 
 export function Header() {
   const t = useTranslations('nav');
@@ -52,7 +52,7 @@ export function Header() {
 
         <div className="flex items-center gap-4 md:gap-6">
           <LanguageSwitcher />
-          <a href="#contact" className="btn-primary hidden md:inline-flex">
+          <a href="#booking" className="btn-primary hidden md:inline-flex">
             {t('book')}
           </a>
           <button
@@ -79,7 +79,7 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#booking"
               onClick={() => setOpen(false)}
               className="btn-primary self-start mt-2"
             >
