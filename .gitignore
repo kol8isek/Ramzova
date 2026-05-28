@@ -8,7 +8,7 @@ coverage
 
 # next.js
 .next/
-out/
+# out/ is intentionally tracked so Cloudflare Pages can serve it without a build step
 build
 
 # misc
