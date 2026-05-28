@@ -1,44 +1,73 @@
-# Horský Hotel Ramzová — webové stránky
+# Horské ubytování Ramzová — webové stránky
 
-Elegantní web pro luxusní horský hotel ve stylu *Badrutt's Palace*. Postaveno na Next.js 14 + Tailwind, dvojjazyčné (CZ / EN).
+Elegantní web ve stylu *Badrutt's Palace*. Postaveno na Next.js 14 + Tailwind, 4 jazyky (CS / EN / PL / DE).
 
-## Spuštění
+## Lokální vývoj
 
 ```bash
 npm install
 npm run dev
 ```
 
-Web poběží na `http://localhost:3000` (čeština) a `http://localhost:3000/en` (angličtina).
+Web poběží na `http://localhost:3000`:
+- `/` — čeština (výchozí)
+- `/en` — angličtina
+- `/pl` — polština
+- `/de` — němčina
 
-## Výměna drone videa
+## Nasazení na Cloudflare Pages
 
-Hero video a sekce "Pohled z výšky" používají placeholder z Pexels. Pro nahrazení vlastním záběrem:
+Projekt je předpřipravený pro Cloudflare Pages přes `@cloudflare/next-on-pages`.
 
-1. Ulož vlastní soubor do `public/videos/hero.mp4` a `public/videos/drone.mp4`
-2. V `src/components/Hero.tsx` nahraď `src="https://videos.pexels.com/..."` cestou `src="/videos/hero.mp4"`
-3. V `src/components/DroneVideo.tsx` analogicky pro `drone.mp4`
-4. Aktualizuj `poster` na vlastní náhledový obrázek
+### Možnost A — přes Cloudflare dashboard (doporučeno)
 
-Doporučené parametry videa: H.264, max 8 MB, 1920×1080, 24–30 fps, bez zvuku.
+1. Přihlaš se na <https://dash.cloudflare.com> → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
+2. Vyber repo `kol8isek/Ramzova` a klikni **Begin setup**.
+3. Nastav build konfiguraci:
+   - **Framework preset:** `Next.js`
+   - **Build command:** `npx @cloudflare/next-on-pages@1`
+   - **Build output directory:** `.vercel/output/static`
+   - **Node version:** `20` nebo vyšší (Environment variables → `NODE_VERSION = 20`)
+4. V **Settings → Functions** zapni:
+   - **Compatibility flag:** `nodejs_compat`
+   - **Compatibility date:** `2024-09-23` (nebo novější)
+5. Klikni **Save and Deploy**. Každý push do `main` spustí nový deploy.
+
+### Možnost B — přes Wrangler CLI z lokálu (Linux/macOS/WSL)
+
+```bash
+npm install
+npm run pages:build              # vyžaduje Linux/macOS/WSL (ne čisté Windows)
+npx wrangler login
+npx wrangler pages deploy .vercel/output/static --project-name=ramzova
+```
+
+> **Poznámka pro Windows:** lokální `pages:build` na čistém Windows neprojde kvůli omezení Vercel CLI. Buď použij **WSL**, nebo nech build běžet přímo na Cloudflare (Možnost A).
 
 ## Struktura
 
 ```
 src/
-  app/[locale]/    # localizované routy
-  components/      # React komponenty (Hero, Rooms, Dining, ...)
+  app/[locale]/    # localizované routy (cs/en/pl/de)
+  components/      # Hero, Intro, Rooms, Dining, DroneVideo, Contact, Header, Footer
   i18n/            # konfigurace next-intl
-  messages/        # překlady CZ/EN
+  messages/        # překlady — cs.json, en.json, pl.json, de.json
+wrangler.toml      # konfigurace Cloudflare Pages
 ```
 
-## Úprava textů
+## Úprava obsahu
 
-Všechny texty jsou v `src/messages/cs.json` a `src/messages/en.json`. Změny se projeví okamžitě v dev režimu.
+- **Texty:** `src/messages/{cs,en,pl,de}.json`
+- **Kontakt:** sekce `contact` v každém z JSON souborů
+- **Restaurace v okolí:** `dining.items[]` v každém JSON
+- **Drone videa:**
+  - Hero: [`src/components/Hero.tsx`](src/components/Hero.tsx) — nahraď URL v `<source src="…">` cestou `/videos/hero.mp4` a soubor ulož do `public/videos/`
+  - Druhá video sekce: [`src/components/DroneVideo.tsx`](src/components/DroneVideo.tsx) — stejně
+- **Fotky:** Unsplash placeholdery v jednotlivých komponentách (`Intro.tsx`, `Rooms.tsx`, `Dining.tsx`)
 
 ## Build pro produkci
 
 ```bash
-npm run build
-npm start
+npm run build      # standardní Next.js build
+npm run pages:build  # Cloudflare Pages build (Linux/macOS/WSL)
 ```
